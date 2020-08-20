@@ -34,7 +34,7 @@ export default function Nav() {
               Next.js Demo
             </a>
           </Link>
-          <div className="flex items-center space-x-8 mt-4 md:mt-0">
+          <div className="flex items-center space-x-6 mt-4 md:mt-0">
             {links.map((link) => (
               <Link href={`/${link}`} key={link}>
                 <a
