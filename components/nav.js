@@ -54,11 +54,11 @@ export default function Nav() {
                   mode === 'dark' ? 'bg-gray-400' : 'bg-gray-800'
                 }`}
               ></div>
-              <span
+              {/* <span
                 className={mode === 'dark' ? 'text-gray-400' : 'text-gray-800'}
               >
                 {mode === 'dark' ? 'LIGHT' : 'DARK'}
-              </span>
+              </span> */}
             </div>
           </div>
         </div>
