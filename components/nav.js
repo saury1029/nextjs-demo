@@ -50,10 +50,14 @@ export default function Nav() {
             ))}
             <div className="flex items-center cursor-pointer" onClick={toggle}>
               <div
-                className={`w-4 h-4 mr-1 rounded-full ${
-                  mode === 'dark' ? 'bg-gray-400' : 'bg-gray-800'
+                className={`px-2 py-1 text-xs border rounded-sm ${
+                  mode === 'dark'
+                    ? 'border-gray-600 bg-gray-600 text-gray-200'
+                    : 'border-gray-800 bg-transparent'
                 }`}
-              ></div>
+              >
+                Toggle Theme
+              </div>
               {/* <span
                 className={mode === 'dark' ? 'text-gray-400' : 'text-gray-800'}
               >

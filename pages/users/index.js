@@ -8,9 +8,9 @@ const Users = ({ users = [] }) => {
     <Layout>
       <div>
         {users.map((user) => (
-          <Link href="/users/[id]" as={`/users/${user.id}`}>
+          <Link href="/users/[id]" as={`/users/${user.id}`} key={user.id}>
             <div
-              className="py-6 border-b cursor-pointer dark:border-gray-700"
+              className="py-6 border-b cursor-pointer dark:border-gray-800"
               key={user.id}
             >
               <h1 className="text-4xl font-bold dark:text-gray-300">
