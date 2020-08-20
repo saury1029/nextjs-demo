@@ -17,7 +17,7 @@ Router.events.on('routeChangeError', () => NProgress.done());
 
 function App({ Component, pageProps }) {
   return (
-    <>
+    <div className="w-screen min-h-screen dark:bg-gray-900">
       <Head>
         <title>Next.js + Tailwind CSS + JSONPlaceholder Demo</title>
         <meta
@@ -35,7 +35,7 @@ function App({ Component, pageProps }) {
         />
       </Head>
       <Component {...pageProps} />
-    </>
+    </div>
   );
 }
 

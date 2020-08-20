@@ -9,8 +9,11 @@ const Users = ({ users = [] }) => {
       <div>
         {users.map((user) => (
           <Link href="/users/[id]" as={`/users/${user.id}`}>
-            <div className="py-6 border-b group cursor-pointer" key={user.id}>
-              <h1 className="text-4xl font-bold group-hover:text-primary">
+            <div
+              className="py-6 border-b cursor-pointer dark:border-gray-700"
+              key={user.id}
+            >
+              <h1 className="text-4xl font-bold dark:text-gray-300">
                 {user.name}
               </h1>
               <p className="text-gray-500">

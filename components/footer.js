@@ -1,7 +1,7 @@
 import Container from './container';
 
 const Footer = () => (
-  <div className="text-xs bg-gray-200 text-gray-500">
+  <div className="text-xs bg-gray-200 text-gray-500 dark:bg-transparent">
     <Container>
       <div className="text-center leading-10 font-bold">
         <a

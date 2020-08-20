@@ -11,7 +11,7 @@ const Photos = ({ photos = [] }) => {
           <div className="w-full md:w-1/4 p-4" key={photo.id}>
             <div className="" key={photo.id}>
               <img src={photo.url} alt="" />
-              <h1 className="mt-2">{photo.title}</h1>
+              <h1 className="mt-2 dark:text-gray-500">{photo.title}</h1>
             </div>
           </div>
         ))}

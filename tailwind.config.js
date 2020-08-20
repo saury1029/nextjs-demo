@@ -11,7 +11,23 @@ module.exports = {
     },
   },
   variants: {
-    textColor: ['responsive', 'hover', 'focus', 'group-hover'],
+    textColor: [
+      'responsive',
+      'hover',
+      'focus',
+      'group-hover',
+      'dark',
+      'dark-hover',
+    ],
+    backgroundColor: [
+      'hover',
+      'dark',
+      'dark-hover',
+      'dark-group-hover',
+      'dark-even',
+      'dark-odd',
+    ],
+    borderColor: ['dark', 'dark-disabled', 'dark-focus', 'dark-focus-within'],
   },
-  plugins: [],
+  plugins: [require('tailwindcss-dark-mode')()],
 };

@@ -9,8 +9,8 @@ const Posts = ({ posts = [] }) => {
       <div>
         {posts.map((post) => (
           <Link href="/posts/[id]" as={`/posts/${post.id}`}>
-            <div className="py-8 group cursor-pointer" key={post.id}>
-              <h1 className="mb-4 text-5xl font-bold leading-tight break-words whitespace-normal group-hover:text-primary">
+            <div className="py-8 cursor-pointer" key={post.id}>
+              <h1 className="mb-4 text-5xl font-bold leading-tight break-words whitespace-normal  dark:text-gray-300">
                 {post.title}
               </h1>
               <p className="text-xl truncate text-gray-600">{post.body}</p>
